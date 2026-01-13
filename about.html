@@ -6,119 +6,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* =======================
-   Base Style
-   ======================= */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d0d0d; /* dark background */
-    color: #e0e0e0;           /* light gray text */
-}
 
-/* =======================
-   Sidebar Navigation
-   ======================= */
-.sidebar {
-    width: 220px;
-    background-color: #1a1a1a; /* charcoal sidebar */
-    height: 100vh;
-    position: fixed;
-    padding-top: 20px;
-    overflow-y: auto;
-}
+body {margin: 0; font-family: Arial, sans-serif; background-color: #0d0d0d; color: #e0e0e0;}
 
-.sidebar h3 {
-    text-align: center;
-    color: #39ff14; /* neon green accent */
-    margin-bottom: 20px;
-}
+.sidebar {width: 220px; background-color: #1a1a1a; height: 100vh; position: fixed; padding-top: 20px; overflow-y: auto;}
 
-/* Links */
-.sidebar a, .dropdown-btn {
-    display: block;
-    color: #e0e0e0;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    transition: background-color 0.3s, color 0.3s;
-    border: none;
-    background-color: #1a1a1a;
-    text-align: left;
-    cursor: pointer;
-}
+.sidebar h3 {text-align: center; color: #39ff14; margin-bottom: 20px;}
 
-.sidebar a:hover, .dropdown-btn:hover {
-    background-color: #333;
-    color: #ff00ff; /* neon magenta hover */
-}
 
-/* =======================
-   Dropdown (Sub-menu)
-   ======================= */
-.dropdown-container {
-    display: none;
-    background-color: #262626;
-}
+.sidebar a, .dropdown-btn {display: block; color: #e0e0e0; text-decoration: none; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s, color 0.3s; border: none; background-color: #1a1a1a; text-align: left;cursor: pointer;}
 
-.dropdown-container a {
-    padding-left: 40px;
-    font-size: 13px;
-}
+.sidebar a:hover, .dropdown-btn:hover {background-color: #333; color: #ff00ff;}
 
-.dropdown-container a:hover {
-    background-color: #333;
-    color: #39ff14;
-}
 
-/* =======================
-   Main Content
-   ======================= */
-.main {
-    margin-left: 220px;
-    padding: 30px;
-}
+.dropdown-container {display: none; background-color: #262626;}
 
-.page-title {
-    color: #ff00ff; /* neon magenta */
-}
+.dropdown-container a {padding-left: 40px; font-size: 13px;}
 
-/* Content Box */
-.content-box {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-    line-height: 1.7;
-    color: #e0e0e0;
-    box-shadow: 0 0 10px #39ff14; /* glowing effect */
-}
+.dropdown-container a:hover {background-color: #333; color: #39ff14;}
 
-.content-box h2 {
-    color: #39ff14; /* neon green headings */
-    margin-top: 25px;
-}
+.main {margin-left: 220px; padding: 30px;}
 
-/* =======================
-   Footer
-   ======================= */
-.disclaimer {
-    margin-top: 40px;
-    padding: 15px;
-    background-color: #1a1a1a;
-    text-align: center;
-    font-size: 12px;
-    color: #ccc;
-    border-top: 1px solid #39ff14;
-}
+.page-title {color: #ff00ff;}
+
+
+.content-box {background-color: #1a1a1a; padding: 20px; border-radius: 8px; margin-top: 15px; line-height: 1.7; color: #e0e0e0; box-shadow: 0 0 10px #39ff14;}
+
+.content-box h2 {color: #39ff14; margin-top: 25px;}
+
+.disclaimer {margin-top: 40px; padding: 15px; background-color: #1a1a1a; text-align: center; font-size: 12px; color: #ccc; border-top: 1px solid #39ff14;}
+
+
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded",()=>{
-  document.querySelector(".dropdown-btn").onclick=function(){
-    let d=this.nextElementSibling;
-    d.style.display=d.style.display==="block"?"none":"block";
-  };
+document.querySelector(".dropdown-btn").onclick=function(){
+let d=this.nextElementSibling;
+d.style.display=d.style.display==="block"?"none":"block";
+};
 });
 </script>
 </head>
@@ -131,12 +57,12 @@ document.addEventListener("DOMContentLoaded",()=>{
 <a href="about.html">About Us</a>
 <button class="dropdown-btn">Services ▾</button>
 <div class="dropdown-container">
-  <a href="services.html">All Services</a>
-  <a href="web-development.html">Web Development</a>
-  <a href="system-development.html">System Development</a>
-  <a href="it-support.html">IT Support</a>
-  <a href="cloud-solutions.html">Cloud Solutions</a>
-  <a href="cybersecurity.html">Cybersecurity</a>
+<a href="services.html">All Services</a>
+<a href="web-development.html">Web Development</a>
+<a href="system-development.html">System Development</a>
+<a href="it-support.html">IT Support</a>
+<a href="cloud-solutions.html">Cloud Solutions</a>
+<a href="cybersecurity.html">Cybersecurity</a>
 </div>
 <a href="projects.html">Projects</a>
 <a href="policies.html">Company Policies</a>
@@ -203,3 +129,4 @@ It was developed for learning XHTML & CSS purposes only.
 
 </body>
 </html>
+
